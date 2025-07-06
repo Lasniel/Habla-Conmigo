@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fonema /k/ - Jugamos con los sonidos</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Fonema /k/ con Kiko el Koala 🐨</h1>
+      <p>
+        ¡Aprende a reconocer y usar el sonido /k/ con juegos y cuentos sonoros!
+      </p>
+    </header>
+    <nav class="navbar">
+      <ul>
+        <li><a href="fonema-s.html">/s/</a></li>
+        <li><a href="fonema-r.html">/r/</a></li>
+        <li><a href="fonema-k.html">/k/</a></li>
+      </ul>
+    </nav>
+
+    <main class="fonema-content">
+      <section class="activity">
+        <h2>👂 Escucha el sonido /k/</h2>
+        <p>Haz clic en cada palabra para identificar el sonido /k/:</p>
+        <div class="audio-buttons">
+          <button onclick="playAudio('coco')">🥥 coco</button>
+          <button onclick="playAudio('kilo')">⚖️ kilo</button>
+          <button onclick="playAudio('caja')">📦 caja</button>
+          <button onclick="playAudio('camisa')">👕 camisa</button>
+        </div>
+      </section>
+
+      <section class="activity">
+        <h2>🎯 ¿Tiene /k/?</h2>
+        <p>Escoge las imágenes que contengan el sonido /k/:</p>
+        <div class="puzzle-options">
+          <img src="img/coco.png" alt="coco" class="option" />
+          <img src="img/mesa.png" alt="mesa" class="option" />
+          <img src="img/kite.png" alt="cometa" class="option" />
+          <img src="img/zapato.png" alt="zapato" class="option" />
+        </div>
+      </section>
+
+      <section class="activity">
+        <h2>📖 Kiko cuenta una historia</h2>
+        <p>
+          Escucha este breve cuento y repite las palabras con /k/ que
+          encuentres:
+        </p>
+        <audio controls>
+          <source src="audios/kiko-cuento.mp3" type="audio/mp3" />
+          Tu navegador no admite audio HTML5.
+        </audio>
+      </section>
+
+      <a class="back-link" href="index.html">← Volver al inicio</a>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Lasniel Olmos Requesen</p>
+    </footer>
+
+    <script>
+      function playAudio(word) {
+        const audio = new Audio(`audios/${word}.mp3`);
+        audio.play();
+      }
+    </script>
+  </body>
+</html>
