@@ -1,0 +1,60 @@
+body {
+  background-color: #e1f5fe;
+  font-family: "Comic Sans MS", cursive;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.portada {
+  padding: 40px;
+}
+
+.imagen-portada {
+  width: 100%;
+  max-width: 800px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.boton {
+  background-color: #4caf50;
+  color: white;
+  padding: 15px 30px;
+  font-size: 1.2em;
+  border: none;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.boton:hover {
+  background-color: #388e3c;
+}
+@keyframes latido {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.08); }
+    100% { transform: scale(1); }
+  }
+  
+  .boton {
+    background-color: #4caf50;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+  
+    /* Animación */
+    animation: latido 1.5s infinite;
+  }
+  
+  .boton:hover {
+    background-color: #388e3c;
+  }
+  
+

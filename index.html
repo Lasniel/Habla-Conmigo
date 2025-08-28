@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Habla Conmigo – Menú Fonmas</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+        font-family: "Comic Sans MS", cursive, sans-serif;
+        background-color: #fff8e1;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+      }
+
+      #bienvenida {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #fff3e0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 99;
+        animation: fadeOut 2s ease 3s forwards;
+      }
+
+      #bienvenida img {
+        width: 150px;
+        animation: girar 2s ease-in-out infinite;
+      }
+
+      #bienvenida h1 {
+        font-size: 2.4em;
+        color: #f57c00;
+        margin-top: 20px;
+      }
+
+      @keyframes girar {
+        0% {
+          transform: rotate(0deg);
+        }
+        50% {
+          transform: rotate(10deg);
+        }
+        100% {
+          transform: rotate(0deg);
+        }
+      }
+
+      @keyframes fadeOut {
+        to {
+          opacity: 0;
+          visibility: hidden;
+        }
+      }
+
+      main {
+        padding: 60px 20px;
+        display: none;
+      }
+
+      .menu {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 40px;
+      }
+
+      .item-fonema {
+        width: 220px;
+        background-color: #fff3e0;
+        border: 3px solid #ffb74d;
+        border-radius: 18px;
+        box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+        padding: 20px;
+        text-decoration: none;
+        transition: transform 0.2s ease;
+      }
+
+      .item-fonema:hover {
+        transform: scale(1.05);
+      }
+
+      .item-fonema img {
+        width: 100px;
+        margin-bottom: 10px;
+      }
+
+      .item-fonema p {
+        font-size: 1.2em;
+        color: #6d4c41;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="bienvenida">
+      <img src="img/sol.png" alt="Sol sonriente" />
+      <h1>¡Bienvenido a Habla Conmigo!</h1>
+    </div>
+
+    <main id="contenido">
+      <h2>🔤 Elige un sonido para comenzar</h2>
+      <div class="menu">
+        <a href="fonemas/fonema-s-actividad.html" class="item-fonema">
+          <img src="img/sol.png" alt="Fonema S" />
+          <p>Fonema /s/</p>
+        </a>
+
+        <a href="fonemas/fonema-r-actividad.html" class="item-fonema">
+          <img src="img/raton.png" alt="Fonema R" />
+          <p>Fonema /r/</p>
+        </a>
+      </div>
+    </main>
+
+    <script>
+      setTimeout(() => {
+        document.getElementById("contenido").style.display = "block";
+        document.body.style.overflow = "auto";
+      }, 3200);
+    </script>
+  </body>
+</html>
