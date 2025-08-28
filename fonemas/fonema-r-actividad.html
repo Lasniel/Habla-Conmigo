@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Fonema /r/ – ¿Cuál comienza con ese sonido?</title>
+    <link rel="stylesheet" href="../style.css" />
+    <style>
+      .actividad {
+        text-align: center;
+        margin-top: 40px;
+      }
+
+      .instruccion {
+        font-size: 1.4em;
+        margin-bottom: 20px;
+      }
+
+      .opciones {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        flex-wrap: wrap;
+      }
+
+      .opcion img {
+        width: 150px;
+        border-radius: 10px;
+        cursor: pointer;
+        border: 4px solid transparent;
+        transition: transform 0.2s ease;
+      }
+
+      .opcion img:hover {
+        transform: scale(1.05);
+      }
+
+      .feedback {
+        font-size: 1.3em;
+        font-weight: bold;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="actividad">
+      <p class="instruccion">
+        🔊 ¿Qué palabra comienza con el sonido <strong>/r/</strong>?
+      </p>
+
+      <audio
+        id="audio-consigna"
+        src="../audio/rrr.mp3"
+        autoplay
+      ></audio>
+      <button
+        class="boton"
+        onclick="document.getElementById('audio-consigna').play()"
+      >
+        🔁 Repetir
+      </button>
+
+      <div class="opciones">
+        <div class="opcion" onclick="respuesta(true)">
+          <img src="../img/raton.png" alt="Ratón" />
+          <p>Ratón</p>
+        </div>
+        <div class="opcion" onclick="respuesta(false)">
+          <img src="../img/gato.png" alt="Gato" />
+          <p>Gato</p>
+        </div>
+      </div>
+
+      <p id="mensaje" class="feedback"></p>
+
+      <div id="navegacion" style="margin-top: 40px; display: none">
+        <a href="fonema-r-repite.html" class="boton">➡ Siguiente</a>
+      </div>
+
+      <script>
+        function respuesta(acierto) {
+          const mensaje = document.getElementById("mensaje");
+          const nav = document.getElementById("navegacion");
+          if (acierto) {
+            mensaje.textContent = "✅ ¡Muy bien! Ratón comienza con /r/";
+            mensaje.style.color = "#2e7d32";
+            nav.style.display = "block";
+          } else {
+            mensaje.textContent =
+              "❌ Inténtalo otra vez… escucha con atención.";
+            mensaje.style.color = "#c62828";
+          }
+        }
+      </script>
+           <div style="margin-top: 40px; display: flex; justify-content: center; gap: 80px;">
+            <a href="fonema-s-actividad.html" class="boton">⬅ Atrás</a>
+            <a href="fonema-r-repite.html" class="boton">➡ Siguiente</a>
+          </div>
+          
+        </div>
+    </div>
+    <!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Habla Conmigo</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+    }
+
+    /* Menú lateral fijo */
+    .menu-lateral {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 240px;
+      height: 100%;
+      background-color: #ffecb3;
+      padding-top: 40px;
+      box-shadow: 2px 0 6px rgba(0, 0, 0, 0.2);
+      z-index: 999;
+    }
+
+    .menu-lateral h2 {
+      text-align: center;
+      color: #e65100;
+      font-size: 1.4em;
+      margin-bottom: 30px;
+    }
+
+    .menu-lateral a {
+      display: block;
+      padding: 14px 20px;
+      text-decoration: none;
+      color: #4e342e;
+      font-size: 1.1em;
+      transition: background 0.2s;
+    }
+
+    .menu-lateral a:hover {
+      background-color: #ffe082;
+    }
+
+    /* Contenido principal desplazado */
+    .contenido {
+      margin-left: 240px;
+      padding: 40px 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Menú lateral fijo -->
+  <nav class="menu-lateral">
+    <h2>📚 Fonemas</h2>
+    <a href="../index.html">🏠 Inicio</a>
+    <a href="fonema-s-actividad.html">🐍 Fonema /s/</a>
+    <a href="fonema-r-actividad.html">🐭 Fonema /r/</a>
+       <a href="#">🔧 Ajustes</a>
+  </nav>
+
+  </div>
+
+</body>
+</html>
+
+  </body>
+</html>

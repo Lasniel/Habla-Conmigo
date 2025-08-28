@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Fonema /s/ – Escucha y repite</title>
+    <link rel="stylesheet" href="../style.css" />
+    <style>
+      .actividad {
+        text-align: center;
+        margin-top: 40px;
+      }
+
+      .palabra {
+        display: inline-block;
+        margin: 30px;
+      }
+
+      .palabra img {
+        width: 150px;
+        border-radius: 12px;
+      }
+
+      .boton-audio {
+        background-color: #039be5;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 8px;
+        font-size: 1.1em;
+        cursor: pointer;
+        margin-top: 10px;
+      }
+
+      .boton-audio:hover {
+        background-color: #0277bd;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="actividad">
+      <h2>🐍 Escucha el sonido /s/ y repite</h2>
+      <audio id="audio-s" src="../audio/sss.mp3"></audio>
+      <button
+        class="boton-audio"
+        onclick="document.getElementById('audio-s').play()"
+      >
+        🔊 Escuchar “ssssss”
+      </button>
+
+      <h3 style="margin-top: 40px">🔁 Ahora repite estas palabras</h3>
+
+      <div class="palabra">
+        <img src="../img/sol.png" alt="Sol" /><br />
+        <audio id="sol" src="../audio/sol.mp3"></audio>
+        <button
+          class="boton-audio"
+          onclick="document.getElementById('sol').play()"
+        >
+          🔊 Sol
+        </button>
+      </div>
+
+      <div class="palabra">
+        <img src="../img/sapo.png" alt="Sapo" /><br />
+        <audio id="sapo" src="../audio/sapo.mp3"></audio>
+        <button
+          class="boton-audio"
+          onclick="document.getElementById('sapo').play()"
+        >
+          🔊 Sapo
+        </button>
+      </div>
+
+      <div class="palabra">
+        <img src="../img/silla.png" alt="Silla" /><br />
+        <audio id="silla" src="../audio/silla.mp3"></audio>
+        <button
+          class="boton-audio"
+          onclick="document.getElementById('silla').play()"
+        >
+          🔊 Silla
+        </button>
+      </div>
+
+      <br /><br />
+      <div style="margin-top: 40px; display: flex; justify-content: center; gap: 80px;">
+        <a href="fonema-s-actividad.html" class="boton">⬅ Atrás</a>
+        <a href="fonema-r-actividad.html" class="boton">➡ Siguiente</a>
+      </div>
+      
+    </div>
+    <!DOCTYPE html>
+    <html lang="es">
+      <head>
+        <meta charset="UTF-8" />
+        <title>Habla Conmigo</title>
+        <link rel="stylesheet" href="style.css" />
+        <style>
+          body {
+            margin: 0;
+            font-family: "Comic Sans MS", cursive, sans-serif;
+          }
+
+          /* Menú lateral fijo */
+          .menu-lateral {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 240px;
+            height: 100%;
+            background-color: #ffecb3;
+            padding-top: 40px;
+            box-shadow: 2px 0 6px rgba(0, 0, 0, 0.2);
+            z-index: 999;
+          }
+
+          .menu-lateral h2 {
+            text-align: center;
+            color: #e65100;
+            font-size: 1.4em;
+            margin-bottom: 30px;
+          }
+
+          .menu-lateral a {
+            display: block;
+            padding: 14px 20px;
+            text-decoration: none;
+            color: #4e342e;
+            font-size: 1.1em;
+            transition: background 0.2s;
+          }
+
+          .menu-lateral a:hover {
+            background-color: #ffe082;
+          }
+
+          /* Contenido principal desplazado */
+          .contenido {
+            margin-left: 240px;
+            padding: 40px 20px;
+          }
+        </style>
+      </head>
+      <body>
+        <!-- Menú lateral fijo -->
+        <nav class="menu-lateral">
+          <h2>📚 Fonemas</h2>
+          <a href="../index.html">🏠 Inicio</a>
+          <a href="fonema-s-actividad.html">🐍 Fonema /s/</a>
+          <a href="fonema-r-actividad.html">🐭 Fonema /r/</a>
+          <a href="#">🔧 Ajustes</a>
+        </nav>
+
+       
+          </p>
+        </div>
+      </body>
+    </html>
+  </body>
+</html>

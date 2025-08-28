@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Fonema /r/ – Escucha y repite</title>
+    <link rel="stylesheet" href="../style.css" />
+    <style>
+      .actividad {
+        text-align: center;
+        margin-top: 40px;
+      }
+
+      .palabra {
+        display: inline-block;
+        margin: 30px;
+      }
+
+      .palabra img {
+        width: 150px;
+        border-radius: 12px;
+      }
+
+      .boton-audio {
+        background-color: #f57c00;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 8px;
+        font-size: 1.1em;
+        cursor: pointer;
+        margin-top: 10px;
+      }
+
+      .boton-audio:hover {
+        background-color: #ef6c00;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="actividad">
+      <h2>🎤 Escucha el sonido /r/ y repite</h2>
+      <audio id="audio-r" src="../audio/rrr.mp3"></audio>
+      <button
+        class="boton-audio"
+        onclick="document.getElementById('audio-r').play()"
+      >
+        🔊 Escuchar “rrrrr”
+      </button>
+
+      <h3 style="margin-top: 40px">🔁 Ahora repite estas palabras</h3>
+
+      <div class="palabra">
+        <img src="../img/rana.png" alt="Rana" /><br />
+        <audio id="rana" src="../audio/rana.mp3"></audio>
+        <button
+          class="boton-audio"
+          onclick="document.getElementById('rana').play()"
+        >
+          🔊 Rana
+        </button>
+      </div>
+
+      <div class="palabra">
+        <img src="../img/rojo.png" alt="Rojo" /><br />
+        <audio id="rojo" src="../audio/rojo.mp3"></audio>
+        <button
+          class="boton-audio"
+          onclick="document.getElementById('rojo').play()"
+        >
+          🔊 Rojo
+        </button>
+      </div>
+
+      <div class="palabra">
+        <img src="../img/rueda.png" alt="Rueda" /><br />
+        <audio id="rueda" src="../audio/rueda.mp3"></audio>
+        <button
+          class="boton-audio"
+          onclick="document.getElementById('rueda').play()"
+        >
+          🔊 Rueda
+        </button>
+      </div>
+
+      <br /><br />
+      <div style="margin-top: 10px; display: flex; justify-content: center; gap: 80px;">
+        <a href="fonema-r-actividad.html" class="boton">⬅ Atrás</a>
+      </div>
+      <div style="margin-top: 40px;">
+        <a href="../final.html" class="boton">🎉 Finalizar</a>
+      </div>
+      
+      
+    </div>
+    <!DOCTYPE html>
+    <html lang="es">
+      <head>
+        <meta charset="UTF-8" />
+        <title>Habla Conmigo</title>
+        <link rel="stylesheet" href="style.css" />
+        <style>
+          body {
+            margin: 0;
+            font-family: "Comic Sans MS", cursive, sans-serif;
+          }
+
+          /* Menú lateral fijo */
+          .menu-lateral {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 240px;
+            height: 100%;
+            background-color: #ffecb3;
+            padding-top: 40px;
+            box-shadow: 2px 0 6px rgba(0, 0, 0, 0.2);
+            z-index: 999;
+          }
+
+          .menu-lateral h2 {
+            text-align: center;
+            color: #e65100;
+            font-size: 1.4em;
+            margin-bottom: 30px;
+          }
+
+          .menu-lateral a {
+            display: block;
+            padding: 14px 20px;
+            text-decoration: none;
+            color: #4e342e;
+            font-size: 1.1em;
+            transition: background 0.2s;
+          }
+
+          .menu-lateral a:hover {
+            background-color: #ffe082;
+          }
+
+          /* Contenido principal desplazado */
+          .contenido {
+            margin-left: 240px;
+            padding: 40px 20px;
+          }
+        </style>
+      </head>
+      <body>
+        <!-- Menú lateral fijo -->
+        <nav class="menu-lateral">
+          <h2>📚 Fonemas</h2>
+          <a href="../index.html">🏠 Inicio</a>
+          <a href="fonema-s-actividad.html">🐍 Fonema /s/</a>
+          <a href="fonema-r-actividad.html">🐭 Fonema /r/</a>
+                    <a href="#">🔧 Ajustes</a>
+        </nav>
+
+       
+        </div>
+      </body>
+    </html>
+  </body>
+</html>
