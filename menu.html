@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Menú Fonemas – Habla Conmigo</title>
+  <style>
+    body {
+      background-color: #fff8e1;
+      font-family: "Comic Sans MS", cursive;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+    h2 {
+      font-size: 2em;
+      color: #f57c00;
+      margin-top: 30px;
+    }
+    .menu {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 40px;
+      margin-top: 20px;
+    }
+    .item-fonema {
+      width: 220px;
+      background-color: #fff3e0;
+      border: 3px solid #ffb74d;
+      border-radius: 18px;
+      box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+      padding: 20px;
+      text-decoration: none;
+      transition: transform 0.2s ease;
+    }
+    .item-fonema:hover {
+      transform: scale(1.05);
+    }
+    .item-fonema img {
+      width: 140px;
+      height: 140px;
+      object-fit: contain;
+      margin-bottom: 10px;
+      border-radius: 12px;
+      background-color: #fff;
+      box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .item-fonema img:hover {
+      transform: scale(1.1);
+      box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+    }
+    .item-fonema p {
+      font-size: 1.2em;
+      color: #6d4c41;
+      font-weight: bold;
+    }
+    button {
+      width: 160px;
+      height: 50px;
+      font-size: 18px;
+      padding: 10px;
+      border-radius: 8px;
+      border: none;
+      background-color: #4CAF50;
+      color: white;
+      cursor: pointer;
+      transition: 0.3s;
+      margin: 5px;
+      animation: latido 1.5s infinite;
+    }
+    button:hover {
+      background-color: #45a049;
+      transform: scale(1.05);
+    }
+    #btn-repetir {
+      width: 200px;
+      height: 60px;
+      font-size: 20px;
+      background-color: #f39c12;
+    }
+    #btn-repetir:hover {
+      background-color: #e67e22;
+    }
+    @keyframes latido {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.08); }
+      100% { transform: scale(1); }
+    }
+  </style>
+</head>
+<body>
+  <h2>🔤 Elige un sonido para comenzar</h2>
+  <div class="menu">
+    <a href="fonemas/fonema-s-actividad.html" class="item-fonema">
+      <img src="img/sol.png" alt="Fonema S" />
+      <p>Fonema /s/</p>
+    </a>
+    <a href="fonemas/fonema-r-actividad.html" class="item-fonema">
+      <img src="img/raton.png" alt="Fonema R" />
+      <p>Fonema /r/</p>
+    </a>
+  </div>
+ 
+</body>
+</html>

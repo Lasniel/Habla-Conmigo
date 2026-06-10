@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Test de Sonidos</title>
+  <style>
+    body {
+      font-family: "Comic Sans MS", cursive;
+      text-align: center;
+      background-color: #f1f8e9;
+      padding: 40px;
+    }
+
+    h2 {
+      color: #f57c00;
+      margin-bottom: 20px;
+    }
+
+    button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 15px 30px;
+      font-size: 1.2em;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      margin: 10px;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #388e3c;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <h2>🎶 Test de Sonidos</h2>
+  <p>Haz clic en cada botón para comprobar que el audio funciona.</p>
+
+  <!-- Botones de prueba -->
+  <button onclick="document.getElementById('aplausos').play()">▶ Aplausos</button>
+  <button onclick="document.getElementById('campana').play()">▶ Campanita</button>
+  <button onclick="document.getElementById('fanfarria').play()">▶ Fanfarria</button>
+  <button onclick="document.getElementById('risas').play()">▶ Risas</button>
+  <button onclick="document.getElementById('estrella').play()">▶ Estrella mágica</button>
+
+  <!-- Audios -->
+  <audio id="aplausos" src="../audio/aplausos.mp3"></audio>
+  <audio id="campana" src="../audio/campanita.mp3"></audio>
+  <audio id="fanfarria" src="../audio/fanfarria.mp3"></audio>
+  <audio id="risas" src="../audio/risas.mp3"></audio>
+  <audio id="estrella" src="../audio/estrella.mp3"></audio>
+</body>
+</html>

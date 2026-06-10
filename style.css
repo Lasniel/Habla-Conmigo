@@ -1,60 +1,229 @@
+/* Estilo general */
 body {
-  background-color: #e1f5fe;
   font-family: "Comic Sans MS", cursive;
   text-align: center;
   margin: 0;
   padding: 0;
 }
 
+/* Portada */
 .portada {
-  padding: 40px;
+  padding: 60px;
 }
 
 .imagen-portada {
   width: 100%;
-  max-width: 800px;
+  max-width: 400px;
   border-radius: 20px;
   margin-bottom: 20px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  animation: girar 3s ease-in-out infinite;
 }
 
-.boton {
-  background-color: #4caf50;
+h1, h2 {
+  color: #f57c00;
+  margin-bottom: 20px;
+}
+
+/* Animaciones */
+@keyframes girar {
+  0% { transform: rotate(0deg); }
+  50% { transform: rotate(10deg); }
+  100% { transform: rotate(0deg); }
+}
+
+@keyframes latido {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.08); }
+  100% { transform: scale(1); }
+}
+
+/* Botones generales */
+button, .boton {
+  background-color: #4CAF50;
   color: white;
   padding: 15px 30px;
   font-size: 1.2em;
   border: none;
   border-radius: 10px;
   text-decoration: none;
-  transition: background-color 0.3s ease;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  animation: latido 1.5s infinite;
+  margin: 5px;
 }
 
-.boton:hover {
+button:hover, .boton:hover {
   background-color: #388e3c;
+  transform: scale(1.05);
 }
-@keyframes latido {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.08); }
-    100% { transform: scale(1); }
-  }
-  
-  .boton {
-    background-color: #4caf50;
-    color: white;
-    padding: 15px 30px;
-    font-size: 1.2em;
-    border: none;
-    border-radius: 10px;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-    display: inline-block;
-  
-    /* Animación */
-    animation: latido 1.5s infinite;
-  }
-  
-  .boton:hover {
-    background-color: #388e3c;
-  }
-  
+
+/* Botón especial Repetir */
+#btn-repetir {
+  width: 200px;
+  height: 60px;
+  font-size: 20px;
+  background-color: #f39c12;
+}
+
+#btn-repetir:hover {
+  background-color: #e67e22;
+}
+
+/* Menú fonema */
+.menu {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-top: 20px;
+}
+
+.item-fonema {
+  width: 220px;
+  background-color: #fff3e0;
+  border: 3px solid #ffb74d;
+  border-radius: 18px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  text-decoration: none;
+  transition: transform 0.2s ease;
+}
+
+.item-fonema:hover {
+  transform: scale(1.05);
+}
+
+.item-fonema img {
+  width: 140px;
+  height: 140px;
+  object-fit: contain;
+  margin-bottom: 10px;
+  border-radius: 12px;
+  background-color: #fff;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.item-fonema img:hover {
+  transform: scale(1.1);
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.item-fonema p {
+  font-size: 1.2em;
+  color: #6d4c41;
+  font-weight: bold;
+  .btn-salir {
+  position: fixed;       /* siempre visible */
+  top: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  background-color: #e53935;
+  color: white;
+  font-size: 1.2em;
+  font-weight: bold;
+  border-radius: 50%;    /* redondo */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.btn-salir:hover {
+  background-color: #b71c1c;
+  transform: scale(1.1);
+}
+.btn-salir {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 80px;
+  height: 80px;
+  background-color: #e53935;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.3);
+  flex-direction: column;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.contenido-salir {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-salir img {
+  width: 20px;
+  height: 20px;
+  margin-bottom: 5px;
+  transition: transform 0.5s ease; /* animación */
+}
+
+.btn-salir span {
+  font-size: 0.9em;
+  color: white;
+  font-weight: bold;
+}
+
+.btn-salir {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 80px;
+  height: 80px;
+  background-color: #e53935;
+  border-radius: 50%;    
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.3);
+  flex-direction: column;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.contenido-salir {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-salir img {
+  width: 24px;   /* tamaño más pequeño */
+  height: 24px;
+  margin-bottom: 5px;
+  transition: transform 0.5s ease;
+}
+
+.btn-salir span {
+  font-size: 0.8em;  /* texto también más pequeño */
+  color: white;
+  font-weight: bold;
+}
+
+.btn-salir:hover {
+  background-color: #b71c1c;
+  transform: scale(1.1);
+}
+
+.btn-salir:hover img {
+  transform: rotateY(180deg); /* animación de puerta abriéndose */
+}
+
+
+}
+
+
+
+
 
